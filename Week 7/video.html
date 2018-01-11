@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+<body>
+<div style="text-align:left"
+style="color:pink">
+  <button onclick="playPause()">Play/Pause</button>
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+</div>
+<video id="video1" width="420">
+  <source src="video.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+
+<script>
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+    if (myVideo.paused)
+        myVideo.play();
+    else
+        myVideo.pause();
+}
+
+function makeBig() {
+    myVideo.width = 700;
+}
+
+function makeSmall() {
+    myVideo.width = 300;
+}
+
+function makeNormal() {
+    myVideo.width = 500;
+}
+</script>
+
+<p><br>YouTube. (2018). A Beautiful World - Stunning HD Video (BAND OF HORSES - FUNERAL).</br></p>
+ <p><br>[online] Available at: <a href=> https://www.youtube.com/watch?v=hB5332nysI0&t=42s</a> [Accessed 11 Jan. 2018].</br></p>
+
+</body>
+</html>
